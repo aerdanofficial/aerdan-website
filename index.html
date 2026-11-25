@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AERDAN — Built Beyond Ordinary</title>
+<meta name="description" content="AERDAN — minimal essentials built beyond ordinary.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#050505;color:#f2f2f2;line-height:1.5}
+a{color:inherit;text-decoration:none}
+.container{width:min(1180px,92%);margin:auto}
+nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #171717;position:sticky;top:0;background:rgba(5,5,5,.94);backdrop-filter:blur(12px);z-index:10}
+.brand{font-size:20px;letter-spacing:.32em;font-weight:700}
+.links{display:flex;gap:28px;font-size:11px;letter-spacing:.18em;color:#aaa}
+.links a:hover{color:#fff}
+.hero{min-height:82vh;display:flex;align-items:center;justify-content:center;text-align:center;border-bottom:1px solid #171717}
+.hero-inner{padding:90px 0}
+.logo-mark{width:150px;max-width:38vw;margin-bottom:35px;filter:grayscale(1) brightness(1.8)}
+.kicker{font-size:10px;letter-spacing:.45em;color:#777;margin-bottom:20px}
+h1{font-size:clamp(48px,10vw,108px);letter-spacing:.18em;font-weight:500;line-height:1}
+.tagline{font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:#aaa;margin-top:25px}
+.cta{display:inline-block;margin-top:42px;border:1px solid #333;padding:15px 28px;font-size:11px;letter-spacing:.25em;text-transform:uppercase;transition:.2s}
+.cta:hover{background:#f2f2f2;color:#050505}
+section{padding:100px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:42px;border-bottom:1px solid #1b1b1b;padding-bottom:18px}
+.section-head h2{font-size:12px;letter-spacing:.32em;font-weight:500}
+.section-head span{font-size:10px;color:#666;letter-spacing:.15em}
+.products{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:#0b0b0b;border:1px solid #181818}
+.product-image{aspect-ratio:1/1;background:linear-gradient(135deg,#0d0d0d,#151515);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.product-image span{font-size:12px;letter-spacing:.3em;color:#555}
+.card-body{padding:22px}
+.card h3{font-size:13px;letter-spacing:.16em;font-weight:500}
+.price{font-size:13px;color:#aaa;margin-top:8px}
+.buy{display:inline-block;margin-top:20px;font-size:10px;letter-spacing:.22em;border-bottom:1px solid #555;padding-bottom:5px}
+.about{max-width:700px}
+.about h2{font-size:30px;font-weight:400;letter-spacing:.08em;margin-bottom:22px}
+.about p{color:#999;font-size:14px;line-height:1.9}
+footer{border-top:1px solid #171717;padding:35px 0;color:#666;font-size:10px;letter-spacing:.15em;display:flex;justify-content:space-between}
+@media(max-width:650px){
+nav{height:65px}.links{gap:13px;font-size:9px}.brand{font-size:15px}
+.hero{min-height:78vh}.hero-inner{padding:70px 0}
+.logo-mark{width:120px}.tagline{font-size:10px;letter-spacing:.2em}
+section{padding:75px 0}.products{grid-template-columns:1fr}
+.section-head{margin-bottom:25px}.about h2{font-size:24px}
+footer{flex-direction:column;gap:12px}
+}
+</style>
+</head>
+<body>
+<nav>
+<div class="container" style="display:flex;justify-content:space-between;align-items:center;width:100%">
+<a class="brand" href="#">AERDAN</a>
+<div class="links"><a href="#shop">SHOP</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></div>
+</div>
+</nav>
+
+<main>
+<section class="hero">
+<div class="hero-inner container">
+<img class="logo-mark" src="logo.jpg" alt="AERDAN logo">
+<div class="kicker">EST. 2026 · SHILLONG</div>
+<h1>AERDAN</h1>
+<div class="tagline">Built Beyond Ordinary.</div>
+<a class="cta" href="#shop">Shop Collection</a>
+</div>
+</section>
+
+<section id="shop">
+<div class="container">
+<div class="section-head"><h2>COLLECTION</h2><span>01 / 02</span></div>
+<div class="products">
+<article class="card">
+<div class="product-image"><span>OVERSIZED TEE</span></div>
+<div class="card-body"><h3>OVERSIZED T-SHIRT</h3><div class="price">₹1,199</div><a class="buy" href="https://instagram.com/aerdanwear" target="_blank">ORDER VIA INSTAGRAM →</a></div>
+</article>
+<article class="card">
+<div class="product-image"><span>SWEATSHIRT</span></div>
+<div class="card-body"><h3>SWEATSHIRT</h3><div class="price">₹1,499</div><a class="buy" href="https://instagram.com/aerdanwear" target="_blank">ORDER VIA INSTAGRAM →</a></div>
+</article>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<div class="section-head"><h2>ABOUT AERDAN</h2><span>IDENTITY</span></div>
+<div class="about">
+<h2>Minimal by design. Distinct by nature.</h2>
+<p>AERDAN creates clean, everyday pieces with a strong silhouette and an understated identity. No unnecessary noise. Just clothing built to stand apart.</p>
+</div>
+</div>
+</section>
+</main>
+
+<footer id="contact" class="container">
+<span>© 2026 AERDAN</span>
+<span>INSTAGRAM · @AERDANWEAR</span>
+</footer>
+</body>
+</html>
