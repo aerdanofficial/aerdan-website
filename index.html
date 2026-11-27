@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AERDAN — Built Beyond Ordinary</title>
-<meta name="description" content="AERDAN — minimal essentials built beyond ordinary.">
+<title>AERDAN — Wear the Peak.</title>
+<meta name="description" content="AERDAN — a study in ambition, restraint and timeless form.">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -20,24 +20,27 @@ nav{height:78px;display:flex;align-items:center;justify-content:space-between;bo
 .logo-mark{width:150px;max-width:38vw;margin-bottom:35px;filter:grayscale(1) brightness(1.8)}
 .kicker{font-size:10px;letter-spacing:.45em;color:#777;margin-bottom:20px}
 h1{font-size:clamp(48px,10vw,108px);letter-spacing:.18em;font-weight:500;line-height:1}
-.tagline{font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:#aaa;margin-top:25px}
+.tagline{font-size:12px;letter-spacing:.38em;letter-spacing:.38em;text-transform:uppercase;color:#aaa;margin-top:25px}
 .cta{display:inline-block;margin-top:42px;border:1px solid #333;padding:15px 28px;font-size:11px;letter-spacing:.25em;text-transform:uppercase;transition:.2s}
 .cta:hover{background:#f2f2f2;color:#050505}
 section{padding:100px 0}
 .section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:42px;border-bottom:1px solid #1b1b1b;padding-bottom:18px}
 .section-head h2{font-size:12px;letter-spacing:.32em;font-weight:500}
 .section-head span{font-size:10px;color:#666;letter-spacing:.15em}
-.products{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card-index{font-size:9px;letter-spacing:.35em;color:#777}
+.card-desc{font-size:11px;color:#888;margin-top:10px}
+
 .card{background:#0b0b0b;border:1px solid #181818}
-.product-image{aspect-ratio:1/1;background:linear-gradient(135deg,#0d0d0d,#151515);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.product-image{aspect-ratio:4/5;background:linear-gradient(135deg,#0d0d0d,#151515);display:flex;align-items:center;justify-content:center;overflow:hidden}
 .product-image span{font-size:12px;letter-spacing:.3em;color:#555}
-.card-body{padding:22px}
-.card h3{font-size:13px;letter-spacing:.16em;font-weight:500}
-.price{font-size:13px;color:#aaa;margin-top:8px}
+.card-body{padding:24px}
+.card h3{font-size:13px;letter-spacing:.22em;letter-spacing:.16em;font-weight:500}
+.price{font-size:14px;letter-spacing:.2em;color:#aaa;margin-top:8px}
 .buy{display:inline-block;margin-top:20px;font-size:10px;letter-spacing:.22em;border-bottom:1px solid #555;padding-bottom:5px}
 .about{max-width:700px}
-.about h2{font-size:30px;font-weight:400;letter-spacing:.08em;margin-bottom:22px}
-.about p{color:#999;font-size:14px;line-height:1.9}
+.about h2{font-family:Georgia,"Times New Roman",serif;font-size:38px;font-weight:400;letter-spacing:.08em;margin-bottom:22px}
+.about p{color:#999;font-family:Georgia,"Times New Roman",serif;font-size:14px;line-height:1.9}
 footer{border-top:1px solid #171717;padding:35px 0;color:#666;font-size:10px;letter-spacing:.15em;display:flex;justify-content:space-between}
 @media(max-width:650px){
 nav{height:65px}.links{gap:13px;font-size:9px}.brand{font-size:15px}
@@ -48,7 +51,56 @@ section{padding:75px 0}.products{grid-template-columns:1fr}
 footer{flex-direction:column;gap:12px}
 }
 </style>
-</head>
+<style>
+:root{--gold:#a99a73;--line:#242321}
+.hero{position:relative;min-height:100vh;overflow:hidden}
+.hero-logo{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+  object-fit:cover !important;
+  margin:0 !important;
+  opacity:.42;
+  filter:grayscale(1) brightness(.62) contrast(1.08);
+  z-index:0;
+}
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to bottom,
+    rgba(0,0,0,.34) 0%,
+    rgba(0,0,0,.48) 48%,
+    rgba(0,0,0,.78) 100%
+  );
+  z-index:1;
+}
+.hero-inner{
+  position:relative;
+  z-index:2;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.hero-inner .hero-logo + .eyebrow{margin-top:0}
+.eyebrow,.section-head h2{color:var(--gold)}
+.hero{background:radial-gradient(ellipse at 50% 15%,#151515 0%,#050505 62%)}
+.hero-inner{max-width:900px}
+.hero-rule{width:72%;height:1px;background:var(--line);margin:38px auto}
+.hero-sub{font-size:10px;letter-spacing:.3em;color:#777}
+.section-head{margin-bottom:48px}
+.card{background:#090909;border-color:#191918}
+.card-index{color:#777}
+.card-desc{min-height:42px}
+.about h2{font-family:Georgia,"Times New Roman",serif;font-weight:400}
+.about p{font-family:Georgia,"Times New Roman",serif}
+@media(max-width:800px){.products{grid-template-columns:1fr}.product-image{aspect-ratio:1/1}}
+</style></head>
 <body>
 <nav>
 <div class="container" style="display:flex;justify-content:space-between;align-items:center;width:100%">
@@ -63,7 +115,7 @@ footer{flex-direction:column;gap:12px}
 <img class="logo-mark" src="logo.jpg" alt="AERDAN logo">
 <div class="kicker">EST. 2026 · SHILLONG</div>
 <h1>AERDAN</h1>
-<div class="tagline">Built Beyond Ordinary.</div>
+<div class="tagline">Wear the peak.</div>
 <a class="cta" href="#shop">Shop Collection</a>
 </div>
 </section>
@@ -72,13 +124,10 @@ footer{flex-direction:column;gap:12px}
 <div class="container">
 <div class="section-head"><h2>COLLECTION</h2><span>01 / 02</span></div>
 <div class="products">
-<article class="card">
-<div class="product-image"><span>OVERSIZED TEE</span></div>
-<div class="card-body"><h3>OVERSIZED T-SHIRT</h3><div class="price">₹1,199</div><a class="buy" href="https://instagram.com/aerdanwear" target="_blank">ORDER VIA INSTAGRAM →</a></div>
-</article>
-<article class="card">
-<div class="product-image"><span>SWEATSHIRT</span></div>
-<div class="card-body"><h3>SWEATSHIRT</h3><div class="price">₹1,499</div><a class="buy" href="https://instagram.com/aerdanwear" target="_blank">ORDER VIA INSTAGRAM →</a></div>
+<article class="card"><div class="product-image"><span>01 · ESSENTIAL</span></div><div class="card-body"><div class="card-index">01 · ESSENTIAL</div><h3>OVERSIZED T-SHIRT</h3><div class="price">₹1,199</div><p class="card-desc">Clean, minimal, timeless.</p><a class="buy" href="https://wa.me/919774409344?text=Hi%20AERDAN%2C%20I%27d%20like%20to%20order%20the%20Oversized%20T-Shirt%20%E2%80%94%20%E2%82%B91%2C199." target="_blank">SHOP NOW →</a></div></article>
+<article class="card"><div class="product-image"><span>02 · SIGNATURE</span></div><div class="card-body"><div class="card-index">02 · SIGNATURE</div><h3>SWEATSHIRT</h3><div class="price">₹1,499</div><p class="card-desc">The core AERDAN piece.</p><a class="buy" href="https://wa.me/919774409344?text=Hi%20AERDAN%2C%20I%27d%20like%20to%20order%20the%20Sweatshirt%20%E2%80%94%20%E2%82%B91%2C499." target="_blank">SHOP NOW →</a></div></article>
+<article class="card"><div class="product-image"><span>03 · RESERVE</span></div><div class="card-body"><div class="card-index">03 · RESERVE</div><h3>COMING SOON</h3><div class="price">COMING SOON</div><p class="card-desc">An elevated edition.</p><a class="buy" href="#contact">JOIN THE LIST →</a></div></article>
+</div><a class="buy" href="https://wa.me/919774409344?text=Hi%20AERDAN%2C%20I%27d%20like%20to%20order%20this%20AERDAN%20piece." target="_blank">SHOP NOW →</a></div>
 </article>
 </div>
 </div>
@@ -88,16 +137,30 @@ footer{flex-direction:column;gap:12px}
 <div class="container">
 <div class="section-head"><h2>ABOUT AERDAN</h2><span>IDENTITY</span></div>
 <div class="about">
-<h2>Minimal by design. Distinct by nature.</h2>
-<p>AERDAN creates clean, everyday pieces with a strong silhouette and an understated identity. No unnecessary noise. Just clothing built to stand apart.</p>
+<h2>There is a certain elegance in becoming.</h2>
+<p>Not in what is possessed, but in what is pursued. In the discipline of quiet progress, the patience to refine one's character, and the resolve to rise beyond what is familiar.</p>
 </div>
 </div>
 </section>
 </main>
 
-<footer id="contact" class="container">
+<section id="contact" class="contact-section">
+<div class="container">
+<div class="section-head"><h2>CONTACT</h2><span>GET IN TOUCH</span></div>
+<div class="about">
+<h2>Quietly made. Ready when you are.</h2>
+<p>Questions about sizing, products or an order? Reach AERDAN directly.</p>
+<p style="margin-top:22px">
+<a href="https://wa.me/919774409344" target="_blank">WhatsApp · +91 97744 09344</a><br>
+<a href="mailto:aerdanofficial@gmail.com">Email · aerdanofficial@gmail.com</a><br>
+<a href="https://instagram.com/aerdanwear" target="_blank">Instagram · @aerdanwear</a>
+</p>
+</div>
+</div>
+</section>
+<footer class="container">
 <span>© 2026 AERDAN</span>
-<span>INSTAGRAM · @AERDANWEAR</span>
+<span>SHILLONG · MEGHALAYA · INDIA</span>
 </footer>
 </body>
 </html>
