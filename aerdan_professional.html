@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="AERDAN — premium streetwear from Shillong. Oversized tees and heavyweight sweatshirts. Wear the peak.">
+<meta name="theme-color" content="#050505">
+<title>AERDAN — Wear the Peak.</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap');
+:root{--bg:#050505;--panel:#0b0b0b;--line:rgba(255,255,255,.12);--muted:#898989;--text:#f3f0e9;--max:1440px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}button{font:inherit}
+.container{width:min(var(--max),88vw);margin:auto}
+.mono{font-family:"DM Mono",monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#777}
+.nav{height:82px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 6vw;position:absolute;top:0;left:0;width:100%;z-index:5}
+.wordmark{font-size:21px;letter-spacing:.42em;margin-left:.42em;font-weight:600}
+.navlinks{display:flex;gap:34px}.navlinks a{font-size:10px;letter-spacing:.22em;color:#b9b7b2}
+.navlinks a:hover{color:#fff}
+.hero{min-height:100svh;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;background:
+radial-gradient(ellipse at 50% 42%,#181818 0%,#0b0b0b 34%,#050505 72%),
+linear-gradient(180deg,#070707,#030303)}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.4))}
+.hero-inner{position:relative;z-index:1;width:min(1100px,90vw);padding-top:55px}
+.eyebrow{margin-bottom:34px}
+.hero h1{font-size:clamp(64px,15vw,190px);font-weight:500;line-height:.82;letter-spacing:.16em;margin-left:.16em}
+.hero-sub{margin-top:34px;font-size:11px;letter-spacing:.48em;color:#a3a09a}
+.hero-actions{margin-top:48px;display:flex;justify-content:center;gap:12px}
+.btn{border:1px solid rgba(255,255,255,.25);padding:16px 28px;font-size:9px;letter-spacing:.28em;text-transform:uppercase;transition:.25s}
+.btn.primary{background:#f1eee7;color:#050505;border-color:#f1eee7}
+.btn:hover{transform:translateY(-2px)}
+.scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);font:10px "DM Mono";letter-spacing:.25em;color:#666}
+section{padding:130px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:55px}
+.section-title{font-size:clamp(42px,7vw,92px);font-weight:400;letter-spacing:-.045em;line-height:.9}
+.section-copy{max-width:470px;color:#8d8d8d;font-size:13px;line-height:1.9}
+.story{border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:9vw;padding-top:38px}
+.story h3{font:italic 400 clamp(30px,4.4vw,60px)/1.1 "Playfair Display",serif;max-width:650px}
+.story-text{color:#969696;font-size:13px;line-height:2;max-width:520px}
+.story-text p+p{margin-top:24px}
+.manifesto{margin-top:90px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:55px 0;display:flex;justify-content:space-between;gap:40px}
+.manifesto strong{font:400 clamp(28px,4vw,54px)/1.1 "Playfair Display",serif}
+.manifesto span{max-width:330px;color:#777;font-size:11px;line-height:1.8}
+.collection{border-top:1px solid var(--line);padding-top:18px;margin-bottom:100px}
+.collection-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+.collection-title{font-size:12px;letter-spacing:.28em}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:#0a0a0a;border:1px solid rgba(255,255,255,.09);transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.25)}
+.visual{aspect-ratio:4/5;background:linear-gradient(145deg,#161616,#070707);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.visual:after{content:"AERDAN";font-size:clamp(34px,6vw,76px);font-weight:600;letter-spacing:.18em;margin-left:.18em;color:rgba(255,255,255,.055);transform:rotate(-90deg);position:absolute}
+.visual span{font:10px "DM Mono";letter-spacing:.28em;color:#555;z-index:1}
+.info{padding:20px 20px 24px}.name{font-size:12px;letter-spacing:.2em}.type{margin-top:7px;color:#6e6e6e;font:9px "DM Mono";letter-spacing:.14em;text-transform:uppercase}.price{margin-top:15px;font-size:12px;color:#bbb}.shop{display:inline-block;margin-top:19px;font:9px "DM Mono";letter-spacing:.2em;border-bottom:1px solid #555;padding-bottom:5px}
+.product-section{margin-top:100px}
+.product-section:first-child{margin-top:0}
+.footer{border-top:1px solid var(--line);padding:45px 0 55px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
+.footer-brand{font-size:18px;letter-spacing:.35em;margin-bottom:16px}.footer p{color:#666;font-size:10px;line-height:1.9}.footer-links{display:flex;flex-direction:column;gap:12px;font:9px "DM Mono";letter-spacing:.2em;color:#777}
+@media(max-width:760px){
+.nav{height:70px;padding:0 5vw}.wordmark{font-size:17px}.navlinks{gap:14px}.navlinks a{font-size:8px}
+.hero h1{font-size:58px}.hero-sub{font-size:8px}.hero-actions{margin-top:40px}.btn{padding:14px 19px}
+section{padding:90px 0}.container{width:89vw}.section-head{display:block}.section-copy{margin-top:25px}.story{grid-template-columns:1fr;gap:35px}
+.manifesto{display:block}.manifesto span{display:block;margin-top:22px}.grid{grid-template-columns:1fr 1fr;gap:10px}.info{padding:15px}.name{font-size:10px}.price{font-size:11px}
+.product-section{margin-top:75px}.footer{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}
+}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.hero-actions{flex-direction:column;width:180px;margin-left:auto;margin-right:auto}.navlinks a:nth-child(2){display:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+<a class="wordmark" href="#">AERDAN</a>
+<nav class="navlinks"><a href="#collection">COLLECTION</a><a href="#story">STORY</a><a href="#contact">CONTACT</a></nav>
+</header>
+
+<main>
+<section class="hero">
+<div class="hero-inner">
+<div class="mono eyebrow">EST. 2026 · SHILLONG, INDIA</div>
+<h1>AERDAN</h1>
+<div class="hero-sub">WEAR THE PEAK.</div>
+<div class="hero-actions"><a class="btn primary" href="#collection">SHOP COLLECTION</a><a class="btn" href="#story">OUR STORY</a></div>
+</div>
+<div class="scroll">SCROLL ↓</div>
+</section>
+
+<section id="story">
+<div class="container">
+<div class="section-head">
+<div><div class="mono" style="margin-bottom:22px">01 — THE STORY</div><h2 class="section-title">Built beyond<br>ordinary.</h2></div>
+<p class="section-copy">AERDAN is a premium streetwear label from Shillong, built around restraint, movement and the pursuit of a higher standard.</p>
+</div>
+<div class="story">
+<h3>“There is a certain elegance in becoming.”</h3>
+<div class="story-text">
+<p>AERDAN began with a simple idea: clothing should feel like part of the person wearing it, not a costume. Clean silhouettes, considered weight and quiet details create pieces made to live in.</p>
+<p>From Shillong, where the mountains are part of the horizon, AERDAN carries that same sense of ascent into its design. The peak is not a destination. It is the standard you keep moving toward.</p>
+</div>
+</div>
+<div class="manifesto"><strong>THE PEAK IS<br>THE STANDARD.</strong><span>Not louder. Not busier. Better considered. AERDAN is made for people who keep refining who they are.</span></div>
+</div>
+</section>
+
+<section id="collection">
+<div class="container">
+<div class="section-head">
+<div><div class="mono" style="margin-bottom:22px">02 — COLLECTION</div><h2 class="section-title">The pieces.</h2></div>
+<p class="section-copy">A focused first collection. Three levels of oversized T-shirts and three levels of heavyweight sweatshirts.</p>
+</div>
+
+<div class="product-section">
+<div class="collection-top"><div class="collection-title">T-SHIRTS</div><div class="mono">01 / 02</div></div>
+<div class="grid">
+<article class="card"><div class="visual"><span>ESSENTIAL</span></div><div class="info"><div class="name">ESSENTIAL</div><div class="type">OVERSIZED T-SHIRT</div><div class="price">₹899</div><a class="shop" href="https://wa.me/919774409344?text=Hi%20AERDAN%2C%20I%27d%20like%20to%20order%20the%20Essential%20T-shirt%20for%20%E2%82%B9899.">SHOP NOW →</a></div></article>
+<article class="card"><div class="visual"><span>SIGNATURE</span></div><div class="info"><div class="name">SIGNATURE</div><div class="type">OVERSIZED T-SHIRT</div><div class="price">₹1,199</div><a class="shop" href="https://wa.me/919774409344?text=Hi%20AERDAN%2C%20I%27d%20like%20to%20order%20the%20Signature%20T-shirt%20for%20%E2%82%B91%2C199.">SHOP NOW →</a></div></article>
+<article class="card"><div class="visual"><span>RESERVE</span></div><div class="info"><div class="name">RESERVE</div><div class="type">OVERSIZED T-SHIRT</div><div class="price">₹1,499</div><a class="shop" href="https://wa.me/919774409344?text=Hi%20AERDAN%2C%20I%27d%20like%20to%20order%20the%20Reserve%20T-shirt%20for%20%E2%82%B91%2C499.">SHOP NOW →</a></div></article>
+</div>
+</div>
+
+<div class="product-section">
+<div class="collection-top"><div class="collection-title">SWEATSHIRTS</div><div class="mono">02 / 02</div></div>
+<div class="grid">
+<article class="card"><div class="visual"><span>CORE</span></div><div class="info"><div class="name">CORE</div><div class="type">OVERSIZED SWEATSHIRT</div><div class="price">₹1,199</div><a class="shop" href="https://wa.me/919774409344?text=Hi%20AERDAN%2C%20I%27d%20like%20to%20order%20the%20Core%20Sweatshirt%20for%20%E2%82%B91%2C199.">SHOP NOW →</a></div></article>
+<article class="card"><div class="visual"><span>SIGNATURE</span></div><div class="info"><div class="name">SIGNATURE</div><div class="type">HEAVYWEIGHT OVERSIZED SWEATSHIRT</div><div class="price">₹1,499</div><a class="shop" href="https://wa.me/919774409344?text=Hi%20AERDAN%2C%20I%27d%20like%20to%20order%20the%20Signature%20Sweatshirt%20for%20%E2%82%B91%2C499.">SHOP NOW →</a></div></article>
+<article class="card"><div class="visual"><span>RESERVE</span></div><div class="info"><div class="name">RESERVE</div><div class="type">PREMIUM OVERSIZED SWEATSHIRT</div><div class="price">₹1,799</div><a class="shop" href="https://wa.me/919774409344?text=Hi%20AERDAN%2C%20I%27d%20like%20to%20order%20the%20Reserve%20Sweatshirt%20for%20%E2%82%B91%2C799.">SHOP NOW →</a></div></article>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-head">
+<div><div class="mono" style="margin-bottom:22px">03 — CONTACT</div><h2 class="section-title">Come closer.</h2></div>
+<p class="section-copy">Orders and enquiries are handled directly. Follow AERDAN for new releases and campaigns.</p>
+</div>
+<div class="story">
+<div class="story-text">
+<p><span class="mono">WHATSAPP</span><br><a href="https://wa.me/919774409344">+91 97744 09344</a></p>
+<p><span class="mono">EMAIL</span><br><a href="mailto:aerdanofficial@gmail.com">aerdanofficial@gmail.com</a></p>
+<p><span class="mono">INSTAGRAM</span><br><a href="https://instagram.com/aerdanwear">@aerdanwear</a></p>
+</div>
+<h3>Wear the peak.<br>Keep moving.</h3>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div><div class="footer-brand">AERDAN</div><p>PREMIUM STREETWEAR · SHILLONG, INDIA<br>© 2026 AERDAN. ALL RIGHTS RESERVED.</p></div>
+<div class="footer-links"><a href="#collection">COLLECTION</a><a href="#story">STORY</a></div>
+<div class="footer-links"><a href="https://instagram.com/aerdanwear">INSTAGRAM</a><a href="https://wa.me/919774409344">WHATSAPP</a></div>
+</footer>
+</body>
+</html>
