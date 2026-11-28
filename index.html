@@ -100,6 +100,17 @@ footer{flex-direction:column;gap:12px}
 .about h2{font-family:Georgia,"Times New Roman",serif;font-weight:400}
 .about p{font-family:Georgia,"Times New Roman",serif}
 @media(max-width:800px){.products{grid-template-columns:1fr}.product-image{aspect-ratio:1/1}}
+</style><style>
+.collection-label{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:0 0 24px}
+.collection-label p{font-size:11px;color:#777;letter-spacing:.08em}
+.sweatshirt-label{margin-top:82px}
+.sweatshirt-grid{grid-template-columns:minmax(0,560px)}
+@media(max-width:650px){
+  .collection-label{display:block}
+  .collection-label p{margin-top:8px}
+  .sweatshirt-label{margin-top:55px}
+  .sweatshirt-grid{grid-template-columns:1fr}
+}
 </style></head>
 <body>
 <nav>
@@ -112,7 +123,7 @@ footer{flex-direction:column;gap:12px}
 <main>
 <section class="hero">
 <div class="hero-inner container">
-<img class="logo-mark" src="logo.jpg" alt="AERDAN logo">
+<img class="hero-logo" src="aerdan_hero_background.jpg" alt="AERDAN logo">
 <div class="kicker">EST. 2026 · SHILLONG</div>
 <h1>AERDAN</h1>
 <div class="tagline">Wear the peak.</div>
@@ -122,14 +133,65 @@ footer{flex-direction:column;gap:12px}
 
 <section id="shop">
 <div class="container">
-<div class="section-head"><h2>COLLECTION</h2><span>01 / 02</span></div>
-<div class="products">
-<article class="card"><div class="product-image"><span>01 · ESSENTIAL</span></div><div class="card-body"><div class="card-index">01 · ESSENTIAL</div><h3>OVERSIZED T-SHIRT</h3><div class="price">₹1,199</div><p class="card-desc">Clean, minimal, timeless.</p><a class="buy" href="https://wa.me/919774409344?text=Hi%20AERDAN%2C%20I%27d%20like%20to%20order%20the%20Oversized%20T-Shirt%20%E2%80%94%20%E2%82%B91%2C199." target="_blank">SHOP NOW →</a></div></article>
-<article class="card"><div class="product-image"><span>02 · SIGNATURE</span></div><div class="card-body"><div class="card-index">02 · SIGNATURE</div><h3>SWEATSHIRT</h3><div class="price">₹1,499</div><p class="card-desc">The core AERDAN piece.</p><a class="buy" href="https://wa.me/919774409344?text=Hi%20AERDAN%2C%20I%27d%20like%20to%20order%20the%20Sweatshirt%20%E2%80%94%20%E2%82%B91%2C499." target="_blank">SHOP NOW →</a></div></article>
-<article class="card"><div class="product-image"><span>03 · RESERVE</span></div><div class="card-body"><div class="card-index">03 · RESERVE</div><h3>COMING SOON</h3><div class="price">COMING SOON</div><p class="card-desc">An elevated edition.</p><a class="buy" href="#contact">JOIN THE LIST →</a></div></article>
-</div><a class="buy" href="https://wa.me/919774409344?text=Hi%20AERDAN%2C%20I%27d%20like%20to%20order%20this%20AERDAN%20piece." target="_blank">SHOP NOW →</a></div>
-</article>
-</div>
+  <div class="section-head"><h2>COLLECTION</h2><span>AERDAN / 2026</span></div>
+
+  <div class="collection-label">
+    <div class="eyebrow">01 — T-SHIRTS</div>
+    <p>Three expressions of the AERDAN oversized tee.</p>
+  </div>
+
+  <div class="products">
+    <article class="card">
+      <div class="product-image"><span>01 · ESSENTIAL</span></div>
+      <div class="card-body">
+        <div class="card-index">01 · ESSENTIAL</div>
+        <h3>OVERSIZED T-SHIRT</h3>
+        <p class="card-desc">Clean, minimal, timeless.</p>
+        <div class="price">₹899</div>
+        <a class="buy" href="https://wa.me/919774409344?text=Hi%20AERDAN%2C%20I%27d%20like%20to%20order%20the%20Essential%20Oversized%20T-Shirt%20%E2%80%94%20%E2%82%B9899." target="_blank">SHOP NOW →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="product-image"><span>02 · SIGNATURE</span></div>
+      <div class="card-body">
+        <div class="card-index">02 · SIGNATURE</div>
+        <h3>OVERSIZED T-SHIRT</h3>
+        <p class="card-desc">The core AERDAN tee.</p>
+        <div class="price">₹1,199</div>
+        <a class="buy" href="https://wa.me/919774409344?text=Hi%20AERDAN%2C%20I%27d%20like%20to%20order%20the%20Signature%20Oversized%20T-Shirt%20%E2%80%94%20%E2%82%B91%2C199." target="_blank">SHOP NOW →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="product-image"><span>03 · RESERVE</span></div>
+      <div class="card-body">
+        <div class="card-index">03 · RESERVE</div>
+        <h3>OVERSIZED T-SHIRT</h3>
+        <p class="card-desc">An elevated, bolder statement.</p>
+        <div class="price">₹1,499</div>
+        <a class="buy" href="https://wa.me/919774409344?text=Hi%20AERDAN%2C%20I%27d%20like%20to%20order%20the%20Reserve%20Oversized%20T-Shirt%20%E2%80%94%20%E2%82%B91%2C499." target="_blank">SHOP NOW →</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="collection-label sweatshirt-label">
+    <div class="eyebrow">02 — SWEATSHIRTS</div>
+    <p>A separate AERDAN category.</p>
+  </div>
+
+  <div class="products sweatshirt-grid">
+    <article class="card">
+      <div class="product-image"><span>AERDAN · SWEATSHIRT</span></div>
+      <div class="card-body">
+        <div class="card-index">01 · SWEATSHIRT</div>
+        <h3>OVERSIZED SWEATSHIRT</h3>
+        <p class="card-desc">Heavyweight. Oversized. Restrained.</p>
+        <div class="price">₹1,499</div>
+        <a class="buy" href="https://wa.me/919774409344?text=Hi%20AERDAN%2C%20I%27d%20like%20to%20order%20the%20AERDAN%20Oversized%20Sweatshirt%20%E2%80%94%20%E2%82%B91%2C499." target="_blank">SHOP NOW →</a>
+      </div>
+    </article>
+  </div>
 </div>
 </section>
 
